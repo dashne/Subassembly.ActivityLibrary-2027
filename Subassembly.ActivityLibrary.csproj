@@ -1,0 +1,223 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Subassembly.ActivityLibrary</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <UseWPF>True</UseWPF>
+    <TargetFramework>net472</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>14.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.point_create_toolbox.ico" />
+    <None Remove="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.link_create_toolbox.ico" />
+    <None Remove="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.intersection_toolbox.ico" />
+    <None Remove="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.curve_create_toolbox.ico" />
+    <None Remove="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.surface_link_create_toolbox.ico" />
+    <None Remove="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.rounding_daylight_toolbox.ico" />
+    <None Remove="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.get_mark_point_toolbox.ico" />
+    <None Remove="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.fillet_arc_toolbox.ico" />
+    <None Remove="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.aux_point_toolbox.ico" />
+    <None Remove="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.aux_link_toolbox.ico" />
+    <None Remove="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.shape_create_toolbox.ico" />
+    <None Remove="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.offset_create_toolbox.ico" />
+    <None Remove="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.loop_create_toolbox.ico" />
+    <None Remove="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.aux_surface_link_toolbox.ico" />
+    <None Remove="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.set_mark_point_toolbox.ico" />
+    <None Remove="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.set_variable_toolbox.ico" />
+    <None Remove="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.define_variable_toolbox.ico" />
+    <None Remove="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.set_output_param_toolbox.ico" />
+    <None Remove="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.get_aux_mark_point_toolbox.ico" />
+    <None Remove="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.custom_error_report_toolbox.ico" />
+    <None Remove="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.define_slope_toolbox.ico" />
+    <None Remove="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.aux_intersection_toolbox.ico" />
+    <None Remove="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.aux_curve_toolbox.ico" />
+    <None Remove="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.CutOrFill_toolbox.ico" />
+    <None Remove="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.general_condition_toolbox.ico" />
+    <None Remove="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.HasDaylight_toolbox.ico" />
+    <None Remove="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.HasIntersection_toolbox.ico" />
+    <None Remove="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.switch_toolbox.ico" />
+    <EmbeddedResource Include="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.point_create_toolbox.ico" LogicalName="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.point_create_toolbox.ico" />
+    <EmbeddedResource Include="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.link_create_toolbox.ico" LogicalName="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.link_create_toolbox.ico" />
+    <EmbeddedResource Include="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.intersection_toolbox.ico" LogicalName="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.intersection_toolbox.ico" />
+    <EmbeddedResource Include="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.curve_create_toolbox.ico" LogicalName="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.curve_create_toolbox.ico" />
+    <EmbeddedResource Include="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.surface_link_create_toolbox.ico" LogicalName="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.surface_link_create_toolbox.ico" />
+    <EmbeddedResource Include="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.rounding_daylight_toolbox.ico" LogicalName="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.rounding_daylight_toolbox.ico" />
+    <EmbeddedResource Include="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.get_mark_point_toolbox.ico" LogicalName="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.get_mark_point_toolbox.ico" />
+    <EmbeddedResource Include="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.fillet_arc_toolbox.ico" LogicalName="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.fillet_arc_toolbox.ico" />
+    <EmbeddedResource Include="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.aux_point_toolbox.ico" LogicalName="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.aux_point_toolbox.ico" />
+    <EmbeddedResource Include="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.aux_link_toolbox.ico" LogicalName="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.aux_link_toolbox.ico" />
+    <EmbeddedResource Include="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.shape_create_toolbox.ico" LogicalName="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.shape_create_toolbox.ico" />
+    <EmbeddedResource Include="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.offset_create_toolbox.ico" LogicalName="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.offset_create_toolbox.ico" />
+    <EmbeddedResource Include="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.loop_create_toolbox.ico" LogicalName="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.loop_create_toolbox.ico" />
+    <EmbeddedResource Include="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.aux_surface_link_toolbox.ico" LogicalName="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.aux_surface_link_toolbox.ico" />
+    <EmbeddedResource Include="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.set_mark_point_toolbox.ico" LogicalName="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.set_mark_point_toolbox.ico" />
+    <EmbeddedResource Include="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.set_variable_toolbox.ico" LogicalName="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.set_variable_toolbox.ico" />
+    <EmbeddedResource Include="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.define_variable_toolbox.ico" LogicalName="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.define_variable_toolbox.ico" />
+    <EmbeddedResource Include="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.set_output_param_toolbox.ico" LogicalName="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.set_output_param_toolbox.ico" />
+    <EmbeddedResource Include="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.get_aux_mark_point_toolbox.ico" LogicalName="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.get_aux_mark_point_toolbox.ico" />
+    <EmbeddedResource Include="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.custom_error_report_toolbox.ico" LogicalName="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.custom_error_report_toolbox.ico" />
+    <EmbeddedResource Include="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.define_slope_toolbox.ico" LogicalName="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.define_slope_toolbox.ico" />
+    <EmbeddedResource Include="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.aux_intersection_toolbox.ico" LogicalName="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.aux_intersection_toolbox.ico" />
+    <EmbeddedResource Include="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.aux_curve_toolbox.ico" LogicalName="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.aux_curve_toolbox.ico" />
+    <EmbeddedResource Include="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.CutOrFill_toolbox.ico" LogicalName="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.CutOrFill_toolbox.ico" />
+    <EmbeddedResource Include="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.general_condition_toolbox.ico" LogicalName="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.general_condition_toolbox.ico" />
+    <EmbeddedResource Include="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.HasDaylight_toolbox.ico" LogicalName="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.HasDaylight_toolbox.ico" />
+    <EmbeddedResource Include="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.HasIntersection_toolbox.ico" LogicalName="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.HasIntersection_toolbox.ico" />
+    <EmbeddedResource Include="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.switch_toolbox.ico" LogicalName="Autodesk.SubassemblyComposer.ActivityLibrary.Resources.Icons.switch_toolbox.ico" />
+    <Page Remove="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\AuxLinkIntersectionDesigner.xaml" />
+    <Page Remove="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\AuxSurfaceLinkDesigner.xaml" />
+    <Page Remove="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\CreateAuxCurveDesigner.xaml" />
+    <Page Remove="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\CreateAuxLinkDesigner.xaml" />
+    <Page Remove="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\CreateAuxPointDesigner.xaml" />
+    <Page Remove="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\CreateCurveDesigner.xaml" />
+    <Page Remove="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\CreateLinkDesigner.xaml" />
+    <Page Remove="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\CreateLoopDesigner.xaml" />
+    <Page Remove="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\CreateOffsetDesigner.xaml" />
+    <Page Remove="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\CreatePointDesigner.xaml" />
+    <Page Remove="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\CreateShapeDesigner.xaml" />
+    <Page Remove="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\CustomErrorReportDesigner.xaml" />
+    <Page Remove="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\CutOrFillConditionDesigner.xaml" />
+    <Page Remove="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\DefineSlopeDesigner.xaml" />
+    <Page Remove="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\DefineVariableDesigner.xaml" />
+    <Page Remove="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\FilletArcDesigner.xaml" />
+    <Page Remove="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\GeneralConditionDesigner.xaml" />
+    <Page Remove="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\GetAuxMarkPointDesigner.xaml" />
+    <Page Remove="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\GetMarkPointDesigner.xaml" />
+    <Page Remove="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\HasDaylightDesigner.xaml" />
+    <Page Remove="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\HasIntersectionDesigner.xaml" />
+    <Page Remove="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\IsSuperelevationDefinedDesigner.xaml" />
+    <Page Remove="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\LinkIntersectionDesigner.xaml" />
+    <Page Remove="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\RoundingDaylightDesigner.xaml" />
+    <Page Remove="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\SetMarkPointDesigner.xaml" />
+    <Page Remove="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\SetOutputParameterValueDesigner.xaml" />
+    <Page Remove="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\SetVariableDesigner.xaml" />
+    <Page Remove="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\StripSurfaceDesigner.xaml" />
+    <Page Remove="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\SwitchConditionDesigner.xaml" />
+    <Page Remove="Autodesk\SubassemblyComposer\ActivityLibrary\PropertyEditor\MultiComboBox.xaml" />
+    <Page Remove="Autodesk\SubassemblyComposer\ActivityLibrary\UserControls\ExpressionDialog.xaml" />
+    <Page Remove="Autodesk\SubassemblyComposer\ActivityLibrary\UserControls\LinksUserCtrl.xaml" />
+    <Page Remove="Autodesk\SubassemblyComposer\ActivityLibrary\UserControls\LoopLinksUserCtrl.xaml" />
+    <Page Remove="Autodesk\SubassemblyComposer\ActivityLibrary\UserControls\OffsetLinksUserCtrl.xaml" />
+    <Page Remove="Autodesk\SubassemblyComposer\ActivityLibrary\UserControls\SwitchCaseCtrl.xaml" />
+    <Page Remove="Autodesk\SubassemblyComposer\ActivityLibrary\UserControls\SwitchCaseNumberCtrl.xaml" />
+    <Page Remove="Autodesk\SubassemblyComposer\ActivityLibrary\UserControls\TypeInfoCtrl.xaml" />
+    <Page Remove="Autodesk\SubassemblyComposer\ActivityLibrary\UserControls\VariableValueCtrl.xaml" />
+    <Page Remove="propertyeditor\customizedcontrol\multicomboboxresource.xaml" />
+    <Page Include="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\AuxLinkIntersectionDesigner.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="activitydesigner/auxlinkintersectiondesigner.xaml" />
+    <Page Include="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\AuxSurfaceLinkDesigner.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="activitydesigner/auxsurfacelinkdesigner.xaml" />
+    <Page Include="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\CreateAuxCurveDesigner.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="activitydesigner/createauxcurvedesigner.xaml" />
+    <Page Include="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\CreateAuxLinkDesigner.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="activitydesigner/createauxlinkdesigner.xaml" />
+    <Page Include="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\CreateAuxPointDesigner.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="activitydesigner/createauxpointdesigner.xaml" />
+    <Page Include="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\CreateCurveDesigner.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="activitydesigner/createcurvedesigner.xaml" />
+    <Page Include="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\CreateLinkDesigner.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="activitydesigner/createlinkdesigner.xaml" />
+    <Page Include="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\CreateLoopDesigner.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="activitydesigner/createloopdesigner.xaml" />
+    <Page Include="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\CreateOffsetDesigner.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="activitydesigner/createoffsetdesigner.xaml" />
+    <Page Include="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\CreatePointDesigner.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="activitydesigner/createpointdesigner.xaml" />
+    <Page Include="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\CreateShapeDesigner.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="activitydesigner/createshapedesigner.xaml" />
+    <Page Include="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\CustomErrorReportDesigner.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="activitydesigner/customerrorreportdesigner.xaml" />
+    <Page Include="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\CutOrFillConditionDesigner.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="activitydesigner/cutorfillconditiondesigner.xaml" />
+    <Page Include="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\DefineSlopeDesigner.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="activitydesigner/defineslopedesigner.xaml" />
+    <Page Include="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\DefineVariableDesigner.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="activitydesigner/definevariabledesigner.xaml" />
+    <Page Include="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\FilletArcDesigner.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="activitydesigner/filletarcdesigner.xaml" />
+    <Page Include="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\GeneralConditionDesigner.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="activitydesigner/generalconditiondesigner.xaml" />
+    <Page Include="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\GetAuxMarkPointDesigner.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="activitydesigner/getauxmarkpointdesigner.xaml" />
+    <Page Include="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\GetMarkPointDesigner.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="activitydesigner/getmarkpointdesigner.xaml" />
+    <Page Include="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\HasDaylightDesigner.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="activitydesigner/hasdaylightdesigner.xaml" />
+    <Page Include="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\HasIntersectionDesigner.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="activitydesigner/hasintersectiondesigner.xaml" />
+    <Page Include="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\IsSuperelevationDefinedDesigner.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="activitydesigner/issuperelevationdefineddesigner.xaml" />
+    <Page Include="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\LinkIntersectionDesigner.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="activitydesigner/linkintersectiondesigner.xaml" />
+    <Page Include="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\RoundingDaylightDesigner.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="activitydesigner/roundingdaylightdesigner.xaml" />
+    <Page Include="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\SetMarkPointDesigner.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="activitydesigner/setmarkpointdesigner.xaml" />
+    <Page Include="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\SetOutputParameterValueDesigner.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="activitydesigner/setoutputparametervaluedesigner.xaml" />
+    <Page Include="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\SetVariableDesigner.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="activitydesigner/setvariabledesigner.xaml" />
+    <Page Include="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\StripSurfaceDesigner.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="activitydesigner/stripsurfacedesigner.xaml" />
+    <Page Include="Autodesk\SubassemblyComposer\ActivityLibrary\ActivityDesigner\SwitchConditionDesigner.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="activitydesigner/switchconditiondesigner.xaml" />
+    <Page Include="Autodesk\SubassemblyComposer\ActivityLibrary\PropertyEditor\MultiComboBox.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="propertyeditor/customizedcontrol/multicombobox.xaml" />
+    <Page Include="Autodesk\SubassemblyComposer\ActivityLibrary\UserControls\ExpressionDialog.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="usercontrols/expressiondialog.xaml" />
+    <Page Include="Autodesk\SubassemblyComposer\ActivityLibrary\UserControls\LinksUserCtrl.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="usercontrols/linksuserctrl.xaml" />
+    <Page Include="Autodesk\SubassemblyComposer\ActivityLibrary\UserControls\LoopLinksUserCtrl.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="usercontrols/looplinksuserctrl.xaml" />
+    <Page Include="Autodesk\SubassemblyComposer\ActivityLibrary\UserControls\OffsetLinksUserCtrl.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="usercontrols/offsetlinksuserctrl.xaml" />
+    <Page Include="Autodesk\SubassemblyComposer\ActivityLibrary\UserControls\SwitchCaseCtrl.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="usercontrols/switchcasectrl.xaml" />
+    <Page Include="Autodesk\SubassemblyComposer\ActivityLibrary\UserControls\SwitchCaseNumberCtrl.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="usercontrols/switchcasenumberctrl.xaml" />
+    <Page Include="Autodesk\SubassemblyComposer\ActivityLibrary\UserControls\TypeInfoCtrl.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="usercontrols/typeinfoctrl.xaml" />
+    <Page Include="Autodesk\SubassemblyComposer\ActivityLibrary\UserControls\VariableValueCtrl.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="usercontrols/variablevaluectrl.xaml" />
+    <Page Include="propertyeditor\customizedcontrol\multicomboboxresource.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="propertyeditor/customizedcontrol/multicomboboxresource.xaml" />
+    <Resource Remove="resources\exclamation_point.ico" />
+    <Resource Remove="resources\icons\aux_curve_designer.ico" />
+    <Resource Remove="resources\icons\aux_intersection_designer.ico" />
+    <Resource Remove="resources\icons\aux_link_designer.ico" />
+    <Resource Remove="resources\icons\aux_point_designer.ico" />
+    <Resource Remove="resources\icons\aux_surface_link_designer.ico" />
+    <Resource Remove="resources\icons\curve_create_designer.ico" />
+    <Resource Remove="resources\icons\custom_error_report_designer.ico" />
+    <Resource Remove="resources\icons\cutorfill_designer.ico" />
+    <Resource Remove="resources\icons\define_slope_designer.ico" />
+    <Resource Remove="resources\icons\define_variable_designer.ico" />
+    <Resource Remove="resources\icons\fillet_arc_designer.ico" />
+    <Resource Remove="resources\icons\general_condition_designer.ico" />
+    <Resource Remove="resources\icons\get_aux_mark_point_designer.ico" />
+    <Resource Remove="resources\icons\get_mark_point_designer.ico" />
+    <Resource Remove="resources\icons\hasdaylight_designer.ico" />
+    <Resource Remove="resources\icons\hasintersection_designer.ico" />
+    <Resource Remove="resources\icons\intersection_designer.ico" />
+    <Resource Remove="resources\icons\link_create_designer.ico" />
+    <Resource Remove="resources\icons\loop_create_designer.ico" />
+    <Resource Remove="resources\icons\offset_create_designer.ico" />
+    <Resource Remove="resources\icons\point_create_designer.ico" />
+    <Resource Remove="resources\icons\rounding_daylight_designer.ico" />
+    <Resource Remove="resources\icons\set_mark_point_designer.ico" />
+    <Resource Remove="resources\icons\set_output_param_designer.ico" />
+    <Resource Remove="resources\icons\set_variable_designer.ico" />
+    <Resource Remove="resources\icons\shape_create_designer.ico" />
+    <Resource Remove="resources\icons\surface_link_create_designer.ico" />
+    <Resource Remove="resources\icons\switch_designer.ico" />
+    <Resource Remove="resources\link_picker.ico" />
+    <Resource Include="resources\exclamation_point.ico" LogicalName="resources/exclamation_point.ico" />
+    <Resource Include="resources\icons\aux_curve_designer.ico" LogicalName="resources/icons/aux_curve_designer.ico" />
+    <Resource Include="resources\icons\aux_intersection_designer.ico" LogicalName="resources/icons/aux_intersection_designer.ico" />
+    <Resource Include="resources\icons\aux_link_designer.ico" LogicalName="resources/icons/aux_link_designer.ico" />
+    <Resource Include="resources\icons\aux_point_designer.ico" LogicalName="resources/icons/aux_point_designer.ico" />
+    <Resource Include="resources\icons\aux_surface_link_designer.ico" LogicalName="resources/icons/aux_surface_link_designer.ico" />
+    <Resource Include="resources\icons\curve_create_designer.ico" LogicalName="resources/icons/curve_create_designer.ico" />
+    <Resource Include="resources\icons\custom_error_report_designer.ico" LogicalName="resources/icons/custom_error_report_designer.ico" />
+    <Resource Include="resources\icons\cutorfill_designer.ico" LogicalName="resources/icons/cutorfill_designer.ico" />
+    <Resource Include="resources\icons\define_slope_designer.ico" LogicalName="resources/icons/define_slope_designer.ico" />
+    <Resource Include="resources\icons\define_variable_designer.ico" LogicalName="resources/icons/define_variable_designer.ico" />
+    <Resource Include="resources\icons\fillet_arc_designer.ico" LogicalName="resources/icons/fillet_arc_designer.ico" />
+    <Resource Include="resources\icons\general_condition_designer.ico" LogicalName="resources/icons/general_condition_designer.ico" />
+    <Resource Include="resources\icons\get_aux_mark_point_designer.ico" LogicalName="resources/icons/get_aux_mark_point_designer.ico" />
+    <Resource Include="resources\icons\get_mark_point_designer.ico" LogicalName="resources/icons/get_mark_point_designer.ico" />
+    <Resource Include="resources\icons\hasdaylight_designer.ico" LogicalName="resources/icons/hasdaylight_designer.ico" />
+    <Resource Include="resources\icons\hasintersection_designer.ico" LogicalName="resources/icons/hasintersection_designer.ico" />
+    <Resource Include="resources\icons\intersection_designer.ico" LogicalName="resources/icons/intersection_designer.ico" />
+    <Resource Include="resources\icons\link_create_designer.ico" LogicalName="resources/icons/link_create_designer.ico" />
+    <Resource Include="resources\icons\loop_create_designer.ico" LogicalName="resources/icons/loop_create_designer.ico" />
+    <Resource Include="resources\icons\offset_create_designer.ico" LogicalName="resources/icons/offset_create_designer.ico" />
+    <Resource Include="resources\icons\point_create_designer.ico" LogicalName="resources/icons/point_create_designer.ico" />
+    <Resource Include="resources\icons\rounding_daylight_designer.ico" LogicalName="resources/icons/rounding_daylight_designer.ico" />
+    <Resource Include="resources\icons\set_mark_point_designer.ico" LogicalName="resources/icons/set_mark_point_designer.ico" />
+    <Resource Include="resources\icons\set_output_param_designer.ico" LogicalName="resources/icons/set_output_param_designer.ico" />
+    <Resource Include="resources\icons\set_variable_designer.ico" LogicalName="resources/icons/set_variable_designer.ico" />
+    <Resource Include="resources\icons\shape_create_designer.ico" LogicalName="resources/icons/shape_create_designer.ico" />
+    <Resource Include="resources\icons\surface_link_create_designer.ico" LogicalName="resources/icons/surface_link_create_designer.ico" />
+    <Resource Include="resources\icons\switch_designer.ico" LogicalName="resources/icons/switch_designer.ico" />
+    <Resource Include="resources\link_picker.ico" LogicalName="resources/link_picker.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Activities.Presentation" />
+    <Reference Include="System.Activities" />
+    <Reference Include="Subassembly.WorkflowEngine">
+      <HintPath>C:\Program Files\Autodesk\Subassembly Composer 2027\Subassembly.WorkflowEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+</Project>

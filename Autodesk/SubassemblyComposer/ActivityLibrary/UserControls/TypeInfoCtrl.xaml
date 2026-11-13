@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UserControl x:Class="Autodesk.SubassemblyComposer.ActivityLibrary.UserControls.TypeInfoCtrl" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:sys="clr-namespace:System;assembly=mscorlib" xmlns:vb="clr-namespace:System.Activities.Presentation.View;assembly=System.Activities.Presentation" xmlns:usercontrols="clr-namespace:Autodesk.SubassemblyComposer.ActivityLibrary.UserControls;assembly=Subassembly.ActivityLibrary">
+  <Grid>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="17" />
+      <ColumnDefinition Width="Auto" />
+    </Grid.ColumnDefinitions>
+    <StackPanel Grid.Column="0">
+      <vb:ExpressionTextBox Name="VbBox" HintText="" UseLocationExpression="False" IsEnabled="False" ExpressionType="{x:Type sys:Double}" Foreground="{x:Null}" BorderBrush="{x:Null}" />
+    </StackPanel>
+    <Button Name="ETBButton" Grid.Column="1" Width="20" Click="ETBButton_Click">...</Button>
+  </Grid>
+</UserControl>

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UserControl x:Class="Autodesk.SubassemblyComposer.ActivityLibrary.PropertyEditor.MultiComboBox" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:local="clr-namespace:Autodesk.SubassemblyComposer.ActivityLibrary.PropertyEditor">
+  <FrameworkElement.Resources>
+    <ResourceDictionary>
+      <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="MultiComboBoxResource.xaml" />
+      </ResourceDictionary.MergedDictionaries>
+      <DataTemplate x:Key="DropDownItemTemplate">
+        <Grid>
+          <CheckBox Name="itemCheckBox" Focusable="False" Padding="2,2,2,2" VerticalContentAlignment="Center" IsChecked="{Binding Path=IsSelected, RelativeSource={RelativeSource AncestorType={x:Type ListBoxItem}}}">
+            <ContentControl.Content>
+              <TextBlock Name="itemCheckBoxTextBlock" Text="{Binding Name, Mode=TwoWay}" />
+            </ContentControl.Content>
+          </CheckBox>
+        </Grid>
+      </DataTemplate>
+    </ResourceDictionary>
+  </FrameworkElement.Resources>
+  <Grid>
+    <ComboBox Name="CheckableCombo">
+      <Control.Template>
+        <ControlTemplate TargetType="{x:Type ComboBox}">
+          <Grid Name="TemplateGrid">
+            <TextBox Name="EditableTextBox" Grid.Column="0" Margin="0,0,0,0" Focusable="True" Background="#00FFFFFF" Validation.ErrorTemplate="{StaticResource ErrorTemplate}" TextChanged="EditableTextBox_TextChanged" LostKeyboardFocus="EditableTextBox_LostKeyboardFocus" GotKeyboardFocus="EditableTextBox_GotKeyboardFocus">
+              <TextBox.Text>
+                <Binding Path="Text" UpdateSourceTrigger="PropertyChanged" RelativeSource="{RelativeSource Mode=FindAncestor, AncestorType=UserControl}">
+                  <Binding.ValidationRules>
+                    <local:NoInvalidCharsRule IsMultiCodes="True" />
+                  </Binding.ValidationRules>
+                </Binding>
+              </TextBox.Text>
+            </TextBox>
+            <TextBlock IsHitTestVisible="False" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="3,0,0,0" Foreground="#FFA9A9A9" FontSize="12" Text="{Binding Path=Prompt, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}">
+              <FrameworkElement.Style>
+                <Style TargetType="{x:Type TextBlock}">
+                  <Setter Property="Visibility" Value="Collapsed" />
+                  <Style.Triggers>
+                    <DataTrigger Value="" Binding="{Binding Path=Text, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}">
+                      <Setter Property="Visibility" Value="Visible" />
+                    </DataTrigger>
+                  </Style.Triggers>
+                </Style>
+              </FrameworkElement.Style>
+            </TextBlock>
+            <Popup Name="DropDownPopup" Placement="Bottom" PopupAnimation="None" IsOpen="{Binding Path=IsKeyboardFocusWithin, ElementName=EditableTextBox, Mode=OneWay}">
+              <Grid Name="DropDown" SnapsToDevicePixels="True" MinWidth="{TemplateBinding FrameworkElement.ActualWidth}" MaxHeight="{TemplateBinding ComboBox.MaxDropDownHeight}" Focusable="False">
+                <Border Name="DropDownBorder" BorderBrush="#FF000000" BorderThickness="1" Focusable="False">
+                  <ListBox Name="CodeListBox" ItemTemplate="{StaticResource DropDownItemTemplate}" BorderThickness="0" HorizontalContentAlignment="Stretch" SelectionMode="Multiple" VirtualizingPanel.IsVirtualizing="True" VirtualizingPanel.VirtualizationMode="Standard" VirtualizingPanel.IsVirtualizingWhenGrouping="True" ItemsSource="{Binding Path=ItemsList, Mode=TwoWay, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}" SelectionChanged="CodeListBox_SelectionChanged">
+                    <ItemsControl.GroupStyle>
+                      <GroupStyle>
+                        <GroupStyle.HeaderTemplate>
+                          <DataTemplate>
+                            <TextBlock Foreground="#FF000000" FontWeight="Bold" FontSize="13" Padding="6,2,2,0" Text="{Binding Name}" />
+                          </DataTemplate>
+                        </GroupStyle.HeaderTemplate>
+                      </GroupStyle>
+                    </ItemsControl.GroupStyle>
+                  </ListBox>
+                </Border>
+              </Grid>
+            </Popup>
+          </Grid>
+        </ControlTemplate>
+      </Control.Template>
+    </ComboBox>
+  </Grid>
+</UserControl>

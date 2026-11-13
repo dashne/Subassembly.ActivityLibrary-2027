@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UserControl x:Class="Autodesk.SubassemblyComposer.ActivityLibrary.UserControls.SwitchCaseNumberCtrl" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:sys="clr-namespace:System;assembly=mscorlib" xmlns:usercontrols="clr-namespace:Autodesk.SubassemblyComposer.ActivityLibrary.UserControls;assembly=Subassembly.ActivityLibrary">
+  <Button Name="AddCase" BorderThickness="0" BorderBrush="#FFFFFFFF" Background="#FFFFFFFF" FontStyle="Italic" Foreground="#FFA9A9A9" HorizontalAlignment="Left" Width="86" Click="AddCase_Click">Add New Case</Button>
+</UserControl>
